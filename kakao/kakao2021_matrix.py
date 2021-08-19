@@ -3,8 +3,8 @@ dc = [1, 0, -1, 0]
 
 def solution(rows, columns, queries):
     m = []
-    for c in range(rows):
-        m.append([r + 1 + c * columns for r in range(columns)])
+    for r in range(rows):
+        m.append([c + 1 + r * columns for c in range(columns)])
 
     answer = []
     for query in queries:
